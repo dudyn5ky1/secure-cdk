@@ -2,6 +2,13 @@
   "name": "secure-cdk",
   "version": "0.1.1-alpha.5",
   "description": "Security abstraction for AWS CDK library. Create AWS resources with best security practices applied for you.",
+  "keywords": [
+    "AWS CDK",
+    "AWS",
+    "S3",
+    "CloudFront",
+    "Security"
+  ],
   "author": {
     "name": "Maksym Dudynskyi",
     "email": "hello@dudynskyi.com",
