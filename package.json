@@ -1,22 +1,31 @@
 {
   "name": "secure-cdk",
-  "version": "0.1.0",
+  "version": "0.1.1-alpha.0",
   "description": "Security abstraction for AWS CDK library. Create AWS resources with best security practices applied for you.",
   "author": {
     "name": "Maksym Dudynskyi",
     "email": "hello@dudynskyi.com",
     "url": "https://github.com/dudyn5ky1"
   },
-  "scripts": {},
+  "scripts": {
+    "release:alpha": "standard-version -p alpha",
+    "release": "standard-version"
+  },
   "license": "MIT",
   "devDependencies": {
     "commitizen": "^4.2.4",
-    "cz-conventional-changelog": "^3.3.0"
+    "cz-conventional-changelog": "^3.3.0",
+    "standard-version": "^9.3.1"
   },
+  "main": "./src/services",
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog",
       "defaultScope": "general"
     }
+  },
+  "peerDependencies": {
+    "@aws-cdk/aws-s3": "^1.116.0",
+    "@aws-cdk/core": "^1.116.0"
   }
 }
