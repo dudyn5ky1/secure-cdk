@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1](https://github.com/dudyn5ky1/secure-cdk/compare/v0.1.1-alpha.5...v0.1.1) (2021-08-04)
+
+
+### Bug Fixes
+
+* **s3:** add documentation for S3 Buckets ([0c38621](https://github.com/dudyn5ky1/secure-cdk/commit/0c38621e1182b225003db31c6ffc7e8d6a753789))
+
 ### [0.1.1-alpha.5](https://github.com/dudyn5ky1/secure-cdk/compare/v0.1.1-alpha.4...v0.1.1-alpha.5) (2021-08-04)
 
 
