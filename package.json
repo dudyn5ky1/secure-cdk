@@ -23,7 +23,8 @@
   "main": "./src/services/index.js",
   "files": [
     "src/index.js",
-    "src/services/*.js"
+    "src/services/*.js",
+    "src/services/*.d.ts"
   ],
   "config": {
     "commitizen": {
