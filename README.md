@@ -28,9 +28,9 @@ By using `createSecureS3Bucket` function to generate your S3 Bucket, you get the
 | enforceSSL | true  | Enforces SSL for requests. | false           |
 
 ```typescript
-import { createSecureS3Bucket } from 'secure-cdk';
+import { SecureBucket } from 'secure-cdk';
 
-const mySiteBucket = createSecureS3Bucket(this, 'myBucket', {
+const mySiteBucket = new SecureBucket(this, 'myBucket', {
   bucketName: 'my-bucket-name',
   websiteIndexDocument: 'index.html'
 });
