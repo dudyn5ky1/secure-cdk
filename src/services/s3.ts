@@ -6,6 +6,6 @@ export const createSecureS3Bucket = (scope: Construct, id: string, props?: Bucke
     scope, id, {
       enforceSSL: true,
       ...props
-    }
+    } as BucketProps
   );
 };
