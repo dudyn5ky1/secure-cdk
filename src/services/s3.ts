@@ -9,3 +9,12 @@ export const createSecureS3Bucket = (scope: Construct, id: string, props?: Bucke
     } as BucketProps
   );
 };
+
+export class SecureBucket extends Bucket {
+  constructor(scope: Construct, id: string, props?: BucketProps) {
+    super(scope, id, {
+      enforceSSL: true,
+      ...props
+    });
+  }
+}
