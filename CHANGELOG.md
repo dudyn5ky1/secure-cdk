@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1-alpha.5](https://github.com/dudyn5ky1/secure-cdk/compare/v0.1.1-alpha.4...v0.1.1-alpha.5) (2021-08-04)
+
+
+### Bug Fixes
+
+* **general:** add .d.ts files to the published package ([ab7aee1](https://github.com/dudyn5ky1/secure-cdk/commit/ab7aee1ae4ef9cfb5b5cdad9bdc6ce090d0bff13))
+
 ### [0.1.1-alpha.4](https://github.com/dudyn5ky1/secure-cdk/compare/v0.1.1-alpha.3...v0.1.1-alpha.4) (2021-08-04)
 
 
