@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2-alpha.0](https://github.com/dudyn5ky1/secure-cdk/compare/v0.1.1...v0.1.2-alpha.0) (2021-08-04)
+
+
+### Features
+
+* **s3:** use class instead of the function ([e7416b2](https://github.com/dudyn5ky1/secure-cdk/commit/e7416b2c3619d96ac841c00d29fe5333fd4ca54e))
+
 ### [0.1.1](https://github.com/dudyn5ky1/secure-cdk/compare/v0.1.1-alpha.5...v0.1.1) (2021-08-04)
 
 
