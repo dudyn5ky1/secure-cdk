@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1-alpha.2](https://github.com/dudyn5ky1/secure-cdk/compare/v0.1.1-alpha.1...v0.1.1-alpha.2) (2021-08-04)
+
+
+### Bug Fixes
+
+* **s3:** add BucketProps type for the parameters ([3abc622](https://github.com/dudyn5ky1/secure-cdk/commit/3abc622e289febb51ea62024373b7299bc5f15f0))
+
 ### [0.1.1-alpha.1](https://github.com/dudyn5ky1/secure-cdk/compare/v0.1.1-alpha.0...v0.1.1-alpha.1) (2021-08-04)
 
 
