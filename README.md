@@ -23,9 +23,10 @@ or
 
 By using `createSecureS3Bucket` function to generate your S3 Bucket, you get the following properties set by default.
 
-| Property   | Value | Description                | AWS CDK Default |
-| ---        | ---   | ---                        | ---             |
-| enforceSSL | true  | Enforces SSL for requests. | false           |
+| Property         | Value | Description                                             | AWS CDK Default |
+| ---              | ---   | ---                                                     | ---             |
+| enforceSSL       | true  | Enforces SSL for requests.                              | false           |
+| publicReadAccess | false | Grants public read access to all objects in the bucket. | false           |
 
 ```typescript
 import { SecureBucket } from 'secure-cdk';
