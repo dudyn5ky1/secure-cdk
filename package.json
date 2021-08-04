@@ -8,6 +8,7 @@
     "url": "https://github.com/dudyn5ky1"
   },
   "scripts": {
+    "cz": "git cz",
     "release:alpha": "standard-version -p alpha",
     "release": "standard-version"
   },
