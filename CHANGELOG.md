@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1-alpha.3](https://github.com/dudyn5ky1/secure-cdk/compare/v0.1.1-alpha.2...v0.1.1-alpha.3) (2021-08-04)
+
+
+### Bug Fixes
+
+* **s3:** add typescript build ([3418abe](https://github.com/dudyn5ky1/secure-cdk/commit/3418abe6f7efd7e7f6222720cdd303103beeaa34))
+
 ### [0.1.1-alpha.2](https://github.com/dudyn5ky1/secure-cdk/compare/v0.1.1-alpha.1...v0.1.1-alpha.2) (2021-08-04)
 
 
