@@ -10,15 +10,17 @@
   "scripts": {
     "cz": "git cz",
     "release:alpha": "standard-version -p alpha",
-    "release": "standard-version"
+    "release": "standard-version",
+    "build": "tsc"
   },
   "license": "MIT",
   "devDependencies": {
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
-    "standard-version": "^9.3.1"
+    "standard-version": "^9.3.1",
+    "typescript": "^4.3.5"
   },
-  "main": "./src/services",
+  "main": "./src/services/index.js",
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog",
