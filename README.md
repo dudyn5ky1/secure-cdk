@@ -7,7 +7,7 @@
 
 The purpose of this package is to enforce best security practices for `AWS` services. It uses `AWS CDK` under the hood to create resources and won't without it.
 
-You may find that some of the rules are too strict for your use cases, but you always have a possibility be explicitly overriding them.
+You may find that some of the rules are too strict for your use cases, but you always have a possibility be explicitly overriding them. If you do that, you will get a warning that will remind you about the security violations.
 
 ## Installation
 
@@ -21,12 +21,13 @@ or
 
 ### S3 Bucket
 
-By using `createSecureS3Bucket` function to generate your S3 Bucket, you get the following properties set by default.
+By using `SecureBucket` class instead of the AWS's `Bucket` construct, you are getting the following properties set by default.
 
-| Property         | Value | Description                                             | AWS CDK Default |
-| ---              | ---   | ---                                                     | ---             |
-| enforceSSL       | true  | Enforces SSL for requests.                              | false           |
-| publicReadAccess | false | Grants public read access to all objects in the bucket. | false           |
+| Property         | Value                  | Description                                                 | AWS CDK Default |
+| ---              | ---                    | ---                                                         | ---             |
+| enforceSSL       | true                   | Enforces SSL for requests.                                  | false           |
+| publicReadAccess | false                  | Grants public read access to all objects in the bucket.     | false           |
+| encryption       | Encrypted (S3 managed) | The kind of server-side encryption to apply to this bucket. | Unencrypted     |
 
 ```typescript
 import { SecureBucket } from 'secure-cdk';

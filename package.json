@@ -16,13 +16,14 @@
   },
   "scripts": {
     "cz": "git cz",
-    "prepublish": "yarn build",
+    "prepublishOnly": "yarn build",
     "release:alpha": "standard-version -p alpha",
     "release": "standard-version",
     "build": "tsc"
   },
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^16.4.12",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
     "standard-version": "^9.3.1",
@@ -42,6 +43,7 @@
   },
   "peerDependencies": {
     "@aws-cdk/aws-s3": "^1.116.0",
+    "@aws-cdk/aws-cloudfront": "^1.116.0",
     "@aws-cdk/core": "^1.116.0"
   }
 }
