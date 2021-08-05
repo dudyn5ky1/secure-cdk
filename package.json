@@ -1,6 +1,6 @@
 {
   "name": "secure-cdk",
-  "version": "0.1.2-alpha.3",
+  "version": "0.1.2-alpha.4",
   "description": "Security abstraction for AWS CDK library. Create AWS resources with best security practices applied for you.",
   "keywords": [
     "AWS CDK",

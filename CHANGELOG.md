@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2-alpha.4](https://github.com/dudyn5ky1/secure-cdk/compare/v0.1.2-alpha.3...v0.1.2-alpha.4) (2021-08-05)
+
+
+### Bug Fixes
+
+* **s3:** add warning messages and encryption by deafult for S3 buckets ([92d5ecc](https://github.com/dudyn5ky1/secure-cdk/commit/92d5ecc64772a805d5ab6db4308d25d1ff092d92))
+
 ### [0.1.2-alpha.3](https://github.com/dudyn5ky1/secure-cdk/compare/v0.1.2-alpha.2...v0.1.2-alpha.3) (2021-08-04)
 
 
