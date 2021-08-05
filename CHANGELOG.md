@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2-alpha.5](https://github.com/dudyn5ky1/secure-cdk/compare/v0.1.2-alpha.4...v0.1.2-alpha.5) (2021-08-05)
+
+
+### Bug Fixes
+
+* **general:** change src to lib and include all missing files ([4729e29](https://github.com/dudyn5ky1/secure-cdk/commit/4729e29ee461a9c62328cb0bd51e855fd5f6890c))
+
 ### [0.1.2-alpha.4](https://github.com/dudyn5ky1/secure-cdk/compare/v0.1.2-alpha.3...v0.1.2-alpha.4) (2021-08-05)
 
 
