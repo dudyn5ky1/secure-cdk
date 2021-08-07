@@ -16,9 +16,8 @@
   },
   "scripts": {
     "cz": "git cz",
-    "prepublishOnly": "yarn build",
-    "release:alpha": "standard-version -p alpha",
-    "release": "standard-version",
+    "release:alpha": "standard-version -p alpha && npm build && npm publish",
+    "release": "standard-version && npm build && npm publish",
     "build": "tsc"
   },
   "license": "MIT",
