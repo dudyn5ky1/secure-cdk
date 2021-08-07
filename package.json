@@ -16,8 +16,8 @@
   },
   "scripts": {
     "cz": "git cz",
-    "release:alpha": "standard-version -p alpha && npm build && npm publish",
-    "release": "standard-version && npm build && npm publish",
+    "release:alpha": "standard-version -p alpha && npm run build && npm publish",
+    "release": "standard-version && npm run build && npm publish",
     "build": "tsc"
   },
   "license": "MIT",
