@@ -1,6 +1,6 @@
 {
   "name": "secure-cdk",
-  "version": "0.1.2-alpha.5",
+  "version": "0.1.2",
   "description": "Security abstraction for AWS CDK library. Create AWS resources with best security practices applied for you.",
   "keywords": [
     "AWS CDK",
@@ -42,8 +42,8 @@
     }
   },
   "peerDependencies": {
-    "@aws-cdk/aws-s3": "^1.116.0",
-    "@aws-cdk/aws-cloudfront": "^1.116.0",
-    "@aws-cdk/core": "^1.116.0"
+    "@aws-cdk/aws-s3": "^1.117.0",
+    "@aws-cdk/aws-cloudfront": "^1.117.0",
+    "@aws-cdk/core": "^1.117.0"
   }
 }

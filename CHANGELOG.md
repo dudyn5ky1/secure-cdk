@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/dudyn5ky1/secure-cdk/compare/v0.1.2-alpha.5...v0.1.2) (2021-08-07)
+
+
+### Features
+
+* **cloudfront:** add SecureDistribution class ([b6b9fe4](https://github.com/dudyn5ky1/secure-cdk/commit/b6b9fe457686433d1eb97f3e3064ff695052991f))
+
 ### [0.1.2-alpha.5](https://github.com/dudyn5ky1/secure-cdk/compare/v0.1.2-alpha.4...v0.1.2-alpha.5) (2021-08-05)
 
 
