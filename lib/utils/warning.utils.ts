@@ -6,6 +6,12 @@ export const warnIfEquals = (property: any, value: any, message: string): void =
   }
 };
 
+export const warnIfNotEquals = (property: any, value: any, message: string): void => {
+  if (property && property !== value) {
+    warn(message);
+  }
+};
+
 const warn = (message: string): void => {
   console.warn(CONSOLE_WARNING_COLOR, `### ${message}`);
 };

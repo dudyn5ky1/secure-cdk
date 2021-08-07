@@ -3,7 +3,7 @@ import { Construct } from '@aws-cdk/core';
 
 import { warnIfEquals } from './../utils';
 
-enum BucketSecurityWarnings {
+enum BucketSecurityWarning {
   SSLIsNotEnforced = 'SSL in S3 Bucket is not enforced.',
   PublicReadAccessEnabled = 'Contents of the S3 Bucket are publicly accessible.',
   BucketIsNotEncrypted = 'S3 Bucket is not encrypted.'
@@ -11,9 +11,9 @@ enum BucketSecurityWarnings {
 
 export class SecureBucket extends Bucket {
   constructor(scope: Construct, id: string, props?: BucketProps) {
-    warnIfEquals(props?.enforceSSL, false, BucketSecurityWarnings.SSLIsNotEnforced);
-    warnIfEquals(props?.publicReadAccess, true, BucketSecurityWarnings.PublicReadAccessEnabled);
-    warnIfEquals(props?.encryption, BucketEncryption.UNENCRYPTED, BucketSecurityWarnings.BucketIsNotEncrypted);
+    warnIfEquals(props?.enforceSSL, false, BucketSecurityWarning.SSLIsNotEnforced);
+    warnIfEquals(props?.publicReadAccess, true, BucketSecurityWarning.PublicReadAccessEnabled);
+    warnIfEquals(props?.encryption, BucketEncryption.UNENCRYPTED, BucketSecurityWarning.BucketIsNotEncrypted);
 
     super(scope, id, {
       enforceSSL: true,

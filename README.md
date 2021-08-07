@@ -41,4 +41,26 @@ const mySiteBucket = new SecureBucket(this, 'myBucket', {
 
 ### CloudFront Distribution
 
+Security wrapper for `Distribution` construct.
 
+| Property               | Value                  | Description                                                                                    | AWS CDK Default |
+| ---                    | ---                    | ---                                                                                            | ---             |
+| minimumProtocolVersion | TLS_V1_2_2021          | The minimum version of the SSL protocol that you want CloudFront to use for HTTPS connections. | TLS_V1_2_2021   |
+
+`createSecureBehavior` is a function used to create preconfigured behaviors for CloudFront distributions.
+
+| Property               | Value                  | Description                                                                                    | AWS CDK Default |
+| ---                    | ---                    | ---                                                                                            | ---             |
+| viewerProtocolPolicy   | HTTPS_ONLY             | The protocol that viewers can use to access the files controlled by this behavior.             | ALLOW_ALL       |
+
+
+```typescript
+import { createSecureBehavior, SecureDistribution } from 'secure-cdk';
+
+const mySiteBucket = new SecureDistribution(this, 'myDistribution', {
+  defaultBehavior: createSecureBehavior({
+    origin: new S3Origin(mySiteBucket)
+  })
+});
+
+```
