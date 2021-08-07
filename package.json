@@ -18,7 +18,7 @@
     "cz": "git cz",
     "release:alpha": "standard-version -p alpha && npm run build && npm publish",
     "release": "standard-version && npm run build && npm publish",
-    "build": "tsc"
+    "build": "tsc lib/**/*.ts"
   },
   "license": "MIT",
   "devDependencies": {
