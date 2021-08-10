@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.9](https://github.com/dudyn5ky1/secure-cdk/compare/v0.1.8...v0.1.9) (2021-08-10)
+
+
+### Bug Fixes
+
+* **typescript:** fix broken typescript build ([a9a6d62](https://github.com/dudyn5ky1/secure-cdk/commit/a9a6d6257f17f5564ec92c81c35e070a9e223c73))
+
 ### [0.1.8](https://github.com/dudyn5ky1/secure-cdk/compare/v0.1.7...v0.1.8) (2021-08-07)
 
 ### [0.1.7](https://github.com/dudyn5ky1/secure-cdk/compare/v0.1.6...v0.1.7) (2021-08-07)
