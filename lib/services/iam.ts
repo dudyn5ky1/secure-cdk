@@ -17,7 +17,6 @@ export class SecurePolicyStatement extends PolicyStatement {
     const actionsPresent = props.actions?.length;
     const resourcesPresent = props.resources?.length;
     if (!actionsPresent || !resourcesPresent || props.effect !== Effect.ALLOW) {
-      super(props);
       return;
     }
 
