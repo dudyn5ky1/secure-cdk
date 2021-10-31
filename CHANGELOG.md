@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.10-alpha.0](https://github.com/dudyn5ky1/secure-cdk/compare/v0.1.9...v0.1.10-alpha.0) (2021-10-31)
+
+
+### Features
+
+* **iam:** add SecurePolicyStatement construct ([b31d658](https://github.com/dudyn5ky1/secure-cdk/commit/b31d658d33662fb86c0210616a291a54c2c69d4e))
+
 ### [0.1.9](https://github.com/dudyn5ky1/secure-cdk/compare/v0.1.8...v0.1.9) (2021-08-10)
 
 
