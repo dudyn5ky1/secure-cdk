@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.11-alpha.0](https://github.com/dudyn5ky1/secure-cdk/compare/v0.1.10...v0.1.11-alpha.0) (2021-10-31)
+
+
+### Features
+
+* **iam:** add support for addResources and addActions methods in PolicyStatement ([ab09c4f](https://github.com/dudyn5ky1/secure-cdk/commit/ab09c4f1dd428b8cecca72df652e48921dc0a702))
+
 ### [0.1.10](https://github.com/dudyn5ky1/secure-cdk/compare/v0.1.10-alpha.0...v0.1.10) (2021-10-31)
 
 ### [0.1.10-alpha.0](https://github.com/dudyn5ky1/secure-cdk/compare/v0.1.9...v0.1.10-alpha.0) (2021-10-31)
