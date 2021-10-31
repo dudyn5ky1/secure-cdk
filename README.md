@@ -72,6 +72,8 @@ Security wrapper for `PolicyStatement` construct. Does not set default propertie
 - `*` passed in `actions` property;
 - `<resource>:*` passed in `actions` property;
 - `*` passed in `resources` property;
+- `.addResources` called with `*`;
+- `.addActions` called with `*` or `<resource>:*`;
 
 
 ```typescript
@@ -79,10 +81,13 @@ import { Effect } from '@aws-cdk/aws-iam';
 import { SecurePolicyStatement } from 'secure-cdk';
 
 const policyStatement = new SecurePolicyStatement(this, 'my-policy-statement', {
-  actions: [`cloudfront:*`],
-  resources: [`*`],
+  actions: ['cloudfront:*'],
+  resources: ['*'],
   effect: Effect.ALLOW
 });
+// or
+policyStatement.addActions('*');
+policyStatement.addResources('*');
 
 ```
 
@@ -91,4 +96,3 @@ const policyStatement = new SecurePolicyStatement(this, 'my-policy-statement', {
 - [ ] Alternative automatic checker (extensions of a `Stack`);
 - [ ] Centralized warning system to awoid warning duplication;
 - [ ] Inclusion of resource identifier in warning;
-- [ ] Handle `.addActions` for `SecurePolicyStatement`;
