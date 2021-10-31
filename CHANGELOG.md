@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.11](https://github.com/dudyn5ky1/secure-cdk/compare/v0.1.11-alpha.1...v0.1.11) (2021-10-31)
+
 ### [0.1.11-alpha.1](https://github.com/dudyn5ky1/secure-cdk/compare/v0.1.11-alpha.0...v0.1.11-alpha.1) (2021-10-31)
 
 
