@@ -12,6 +12,6 @@ export const warnIfNotEquals = (property: any, value: any, message: string): voi
   }
 };
 
-const warn = (message: string): void => {
+export const warn = (message: string): void => {
   console.warn(CONSOLE_WARNING_COLOR, `### ${message}`);
 };
