@@ -1,13 +1,14 @@
 {
   "name": "secure-cdk",
-  "version": "0.1.8",
+  "version": "0.1.10",
   "description": "Security abstraction for AWS CDK library. Create AWS resources with best security practices applied for you.",
   "keywords": [
     "AWS CDK",
     "AWS",
     "S3",
     "CloudFront",
-    "Security"
+    "Security",
+    "IAM"
   ],
   "author": {
     "name": "Maksym Dudynskyi",
@@ -18,16 +19,9 @@
     "cz": "git cz",
     "release:alpha": "standard-version -p alpha && npm run build && npm publish",
     "release": "standard-version && npm run build && npm publish",
-    "build": "tsc lib/**/*.ts"
+    "build": "tsc -b"
   },
   "license": "MIT",
-  "devDependencies": {
-    "@types/node": "^16.4.12",
-    "commitizen": "^4.2.4",
-    "cz-conventional-changelog": "^3.3.0",
-    "standard-version": "^9.3.1",
-    "typescript": "^4.3.5"
-  },
   "main": "./lib/services/index.js",
   "files": [
     "lib/index.js",
@@ -41,8 +35,20 @@
     }
   },
   "peerDependencies": {
-    "@aws-cdk/aws-s3": "^1.117.0",
-    "@aws-cdk/aws-cloudfront": "^1.117.0",
-    "@aws-cdk/core": "^1.117.0"
+    "@aws-cdk/aws-s3": "^1.119.0",
+    "@aws-cdk/aws-cloudfront": "^1.119.0",
+    "@aws-cdk/aws-iam": "^1.119.0",
+    "@aws-cdk/core": "^1.119.0"
+  },
+  "devDependencies": {
+    "@aws-cdk/aws-s3": "1.119.0",
+    "@aws-cdk/aws-cloudfront": "1.119.0",
+    "@aws-cdk/aws-iam": "1.119.0",
+    "@aws-cdk/core": "1.119.0",
+    "@types/node": "^16.4.12",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "standard-version": "^9.3.1",
+    "typescript": "^4.3.5"
   }
 }

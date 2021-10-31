@@ -5,9 +5,9 @@
 
 ## Description
 
-The purpose of this package is to enforce best security practices for `AWS` services. It uses `AWS CDK` under the hood to create resources and won't without it.
+The purpose of this package is to enforce best security practices for `AWS` services. It uses `AWS CDK` under the hood to create resources and won't work without it.
 
-You may find that some of the rules are too strict for your use cases, but you always have a possibility be explicitly overriding them. If you do that, you will get a warning that will remind you about the security violations.
+You may find that some of the rules are too strict for your use cases, but you always have a possibility of explicitly overriding them. If you do that, you will get a warning that will remind you about the security violations.
 
 ## Installation
 
@@ -32,7 +32,7 @@ By using `SecureBucket` class instead of the AWS's `Bucket` construct, you are g
 ```typescript
 import { SecureBucket } from 'secure-cdk';
 
-const mySiteBucket = new SecureBucket(this, 'myBucket', {
+const mySiteBucket = new SecureBucket(this, 'my-bucket', {
   bucketName: 'my-bucket-name',
   websiteIndexDocument: 'index.html'
 });
@@ -57,10 +57,38 @@ Security wrapper for `Distribution` construct.
 ```typescript
 import { createSecureBehavior, SecureDistribution } from 'secure-cdk';
 
-const mySiteBucket = new SecureDistribution(this, 'myDistribution', {
+const distribution = new SecureDistribution(this, 'my-distribution', {
   defaultBehavior: createSecureBehavior({
     origin: new S3Origin(mySiteBucket)
   })
 });
 
 ```
+
+### IAM Role (PolicyStatement)
+
+Security wrapper for `PolicyStatement` construct. Does not set default properties, however warns when:
+
+- `*` passed in `actions` property;
+- `<resource>:*` passed in `actions` property;
+- `*` passed in `resources` property;
+
+
+```typescript
+import { Effect } from '@aws-cdk/aws-iam';
+import { SecurePolicyStatement } from 'secure-cdk';
+
+const policyStatement = new SecurePolicyStatement(this, 'my-policy-statement', {
+  actions: [`cloudfront:*`],
+  resources: [`*`],
+  effect: Effect.ALLOW
+});
+
+```
+
+## TODO
+
+- [ ] Alternative automatic checker (extensions of a `Stack`);
+- [ ] Centralized warning system to awoid warning duplication;
+- [ ] Inclusion of resource identifier in warning;
+- [ ] Handle `.addActions` for `SecurePolicyStatement`;
